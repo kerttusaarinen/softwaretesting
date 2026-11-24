@@ -1,5 +1,7 @@
 
 import camelCase from '../src/camelCase.js';
+// Author: Anton Virtanen
+// npm test -- --runInBand tests/camelCase.test.js
 
 // Generic camel case cases
 

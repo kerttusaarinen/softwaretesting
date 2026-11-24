@@ -1,6 +1,7 @@
 
 import isEmpty from '../src/isEmpty.js';
-
+// Author: Anton Virtanen
+// npm test -- --runInBand tests/isEmpty.test.js
 
 // Emptiness != falsy.
 describe('isEmpty.js - Basic values', () => {

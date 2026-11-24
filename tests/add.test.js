@@ -1,6 +1,7 @@
 
 import add from '../src/add.js';
-
+// Author: Anton Virtanen
+// npm test -- --runInBand tests/add.test.js
 
 //----- TESTS DEFINED IN PHASE 1
 describe('add.js - Phase 1 planned tests (AD-01 to AD-06)', () => {

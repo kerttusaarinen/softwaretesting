@@ -1,5 +1,8 @@
 
 import chunk from '../src/chunk.js';
+// Author: Anton Virtanen
+// npm test -- --runInBand tests/chunk.test.js
+
 
 //----- TESTS DEFINED IN PHASE 1
 describe('chunk.js - Phase 1 planned tests (CH-01 to CH-07)', () => {
