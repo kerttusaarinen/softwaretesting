@@ -79,3 +79,14 @@ describe('camelCase.js - Accented characters', () => {
     expect(camelCase(input)).toBe(expected);
   });
 });
+
+describe('camelCase.js - Investigation ignoring leading whitespace', () => {
+  test.each([
+    ['normal input', 'product name', 'productName'],
+    ['empty input', '', ''],
+    ['undefined input', undefined, ''],
+    ['null input', null, ''],
+  ])('handles %s', (_, input, expected) => {
+    expect(camelCase(input).trimStart()).toBe(expected);
+  });
+});

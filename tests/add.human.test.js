@@ -21,6 +21,11 @@ describe('add.js - Phase 1 planned tests (AD-01 to AD-06)', () => {
 
     expect(result).toBe(0.1 + 0.2);
     expect(result).toBeCloseTo(0.3, 10);
+
+    if (result !== 0.3){
+      console.warn("Precision warning: Output is expected, but not accurate");
+    }
+
   });
 
   test('AD-04: concatenates string operands', () => {

@@ -5,7 +5,12 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js"
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js",
+    "test:human": "npm test -- --testPathPatterns=human.test.js",
+    "test:ai": "npm test -- --testPathPatterns=ai.test.js",
+    "test:human:coverage": "npm run test:human -- --coverage --coverageDirectory=coverage/human",
+    "test:ai:coverage": "npm run test:ai -- --coverage --coverageDirectory=coverage/ai",
+    "test:coverage": "npm test -- --coverage"
   },
   "author": "",
   "license": "MIT",
